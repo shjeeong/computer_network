@@ -8,7 +8,7 @@
 
 **U<sub>sender</sub>**: **utilization** - fraction of time sender busy sending 
 
-![image-20230424111047373](C:\Users\uonsl\AppData\Roaming\Typora\typora-user-images\image-20230424111047373.png)
+![image-20230424111047373](image\image-20230424111047373.png)
 
 pkt0을 보내고 pkt1을 보내기 시작할 때까지 걸리는 시간: 
 
@@ -18,7 +18,7 @@ pkt0을 보내고 pkt1을 보내기 시작할 때까지 걸리는 시간:
 >
 > ack는 패킷에 비해 크기가 아주아주 작기 때문에 transmission delay 무시 
 
-![image-20230424111156482](C:\Users\uonsl\AppData\Roaming\Typora\typora-user-images\image-20230424111156482.png)
+![image-20230424111156482](image\image-20230424111156482.png)
 
 stop-and-wait protocol이 시간 활용은 매우 비효율적이다. ack가 도착할 때까지 아무것도 안하고 가만히 기다리기만 하니까
 
@@ -26,7 +26,7 @@ stop-and-wait protocol이 시간 활용은 매우 비효율적이다. ack가 도
 
 비효율적인 stop-and-wait를 버리고 파이프라인 프로토콜을 사용해보자
 
-![image-20230424111138943](C:\Users\uonsl\AppData\Roaming\Typora\typora-user-images\image-20230424111138943.png)
+![image-20230424111138943](image\image-20230424111138943.png)
 
 파이프라인 프로토콜은 n개의 패킷을 ack도착할때까지 기다리지 않고 한꺼번에 보낼 수 있다. -> 시간 효율이 stop-and-protocol에 비해 n배 높아진다; seq \# 배만큼 높아짐
 
